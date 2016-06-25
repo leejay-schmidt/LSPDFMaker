@@ -6,6 +6,7 @@
 //  Copyright © 2016 Leejay Schmidt. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 //! Project version number for LSPDFMaker.
@@ -14,6 +15,15 @@ FOUNDATION_EXPORT double LSPDFMakerVersionNumber;
 //! Project version string for LSPDFMaker.
 FOUNDATION_EXPORT const unsigned char LSPDFMakerVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <LSPDFMaker/PublicHeader.h>
+@interface LSPDFMaker : NSObject
 
+@property (nonatomic) CGSize pagesize;
+
+-(NSString *)startPDF:(NSString *)pdfName withWidth:(CGFloat)width withHeight:(CGFloat)height;
+-(void)beginNewPage;
+-(void)completePDF;
+-(CGRect)addText:(NSString*)text withFrame:(CGRect)frame fontSize:(float)fontSize;
+-(CGRect)addImage:(UIImage*)image atPoint:(CGPoint)point;
+-(void)startPDFToData:(NSMutableData *)data withWidth:(CGFloat)width withHeight:(CGFloat)height;
+@end
 

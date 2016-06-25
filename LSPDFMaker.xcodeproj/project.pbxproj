@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		ADD9A25A1D1F3E4500F6606E /* LSPDFMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9A2591D1F3E4500F6606E /* LSPDFMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADD9A2621D1F3ED400F6606E /* LSPDFMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9A2611D1F3ED400F6606E /* LSPDFMaker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ADD9A2561D1F3E4500F6606E /* LSPDFMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LSPDFMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD9A2591D1F3E4500F6606E /* LSPDFMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSPDFMaker.h; sourceTree = "<group>"; };
 		ADD9A25B1D1F3E4500F6606E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD9A2611D1F3ED400F6606E /* LSPDFMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSPDFMaker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				ADD9A2591D1F3E4500F6606E /* LSPDFMaker.h */,
+				ADD9A2611D1F3ED400F6606E /* LSPDFMaker.m */,
 				ADD9A25B1D1F3E4500F6606E /* Info.plist */,
 			);
 			path = LSPDFMaker;
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD9A2621D1F3ED400F6606E /* LSPDFMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
